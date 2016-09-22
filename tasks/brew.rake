@@ -16,11 +16,11 @@ namespace :brew do
         imagemagick v8 chromedriver'
   end
 
-  desc 'Start Homebrew services'
-  task :start_services do
-    sh 'brew services start mongodb'
-    sh 'brew services start mysql'
-    sh 'brew services start redis'
-    sh 'brew services start postgresql'
+  desc 'Restart Homebrew services'
+  task :restart_services do
+    sh 'brew services restart mongodb'
+    sh 'brew services restart mysql'
+    sh 'brew services restart redis'
+    sh 'brew services restart postgresql'
   end
 end

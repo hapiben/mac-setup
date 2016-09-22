@@ -13,6 +13,6 @@ namespace :dotfiles do
     
     Rake::Task['brew:install'].invoke
     Rake::Task['brew:install_dev_dependencies'].invoke
-    Rake::Task['brew:start_services'].invoke
+    Rake::Task['brew:restart_services'].invoke
   end
 end
