@@ -8,8 +8,8 @@ namespace :dotfiles do
 
   desc 'Setup your machine'
   task :install do
-    print 'Invoking Homebrew tasks'
-    print '--------------------------------------------------------------------'
+    p 'Invoking Homebrew tasks'
+    p '--------------------------------------------------------------------'
     
     Rake::Task['brew:install'].invoke
     Rake::Task['brew:install_dev_dependencies'].invoke
