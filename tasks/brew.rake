@@ -13,7 +13,7 @@ namespace :brew do
   task :install_dev_dependencies do
     sh 'brew install rbenv ruby-build \
         z mongo mysql redis postgresql \
-        imagemagick qt v8 chromedriver'
+        imagemagick v8 chromedriver'
   end
 
   desc 'Start Homebrew services'
