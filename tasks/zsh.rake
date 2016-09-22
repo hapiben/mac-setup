@@ -8,6 +8,7 @@ namespace :zsh do
   desc 'Configure Zsh'
   task :configure do
     setup_theme
+    setup_zshrc
   end
 end
 
@@ -19,4 +20,9 @@ def setup_theme
         rm master.zip && \
         rm -fr honukai-iterm-zsh-master'
   end
+end
+
+def setup_zshrc
+  sh 'rm ~/.zshrc && \
+      cp templates/zshrc.zsh-template ~/.zshrc'
 end
