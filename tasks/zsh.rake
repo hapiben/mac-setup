@@ -24,5 +24,5 @@ end
 
 def setup_zshrc
   sh 'rm ~/.zshrc && \
-      cp templates/zshrc.zsh-template ~/.zshrc'
+      cp templates/zshrc.template ~/.zshrc'
 end

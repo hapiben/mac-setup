@@ -14,6 +14,10 @@ namespace :dotfiles do
     Rake::Task['brew:configure'].invoke
     Rake::Task['brew:restart_services'].invoke
 
+    p 'Invoking Bash tasks'
+    p '--------------------------------------------------------------------'
+    Rake::Task['bash:configure'].invoke
+
     p 'Invoking Zsh tasks'
     p '--------------------------------------------------------------------'
     Rake::Task['zsh:install'].invoke
