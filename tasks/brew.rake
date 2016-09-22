@@ -15,4 +15,12 @@ namespace :brew do
         z mongo mysql redis postgresql \
         imagemagick qt v8 chromedriver'
   end
+
+  desc 'Start Homebrew services'
+  task :start_services do
+    sh 'brew services start mongodb'
+    sh 'brew services start mysql'
+    sh 'brew services start redis'
+    sh 'brew services start postgresql'
+  end
 end
