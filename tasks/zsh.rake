@@ -1,4 +1,4 @@
-namespace :brew do
+namespace :zsh do
 
   desc 'Install Zsh'
   task :install do
