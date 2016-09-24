@@ -22,5 +22,10 @@ namespace :dotfiles do
     p '--------------------------------------------------------------------'
     Rake::Task['zsh:install'].invoke
     Rake::Task['zsh:configure'].invoke
+    Rake::Task['bash:configure'].invoke
+
+    p 'Invoking Iterm tasks'
+    p '--------------------------------------------------------------------'
+    Rake::Task['iterm:configure'].invoke
   end
 end
