@@ -87,3 +87,6 @@ source $HOME/.bash_profile
 
 # Z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# rbenv
+eval "$(rbenv init -)"
