@@ -27,5 +27,10 @@ namespace :dotfiles do
     p 'Invoking Iterm tasks'
     p '--------------------------------------------------------------------'
     Rake::Task['iterm:configure'].invoke
+
+    p 'Invoking Sublime tasks'
+    p '--------------------------------------------------------------------'
+    Rake::Task['sublime:install'].invoke
+    Rake::Task['sublime:configure'].invoke
   end
 end
