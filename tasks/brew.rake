@@ -14,7 +14,7 @@ namespace :brew do
     sh 'brew install rbenv ruby-build \
         z mongo mysql redis postgresql \
         imagemagick v8 chromedriver \
-        wget'
+        nodejs wget'
   end
 
   desc 'Restart Homebrew services'
