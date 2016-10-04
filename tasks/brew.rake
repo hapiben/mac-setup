@@ -13,8 +13,9 @@ namespace :brew do
   task :configure do
     sh 'brew install rbenv ruby-build \
         z mongo mysql redis postgresql \
-        imagemagick v8 chromedriver \
+        v8 chromedriver \
         nodejs wget'
+    sh 'bew install imagemagick --with-jp2'
   end
 
   desc 'Restart Homebrew services'
