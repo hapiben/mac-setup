@@ -15,7 +15,7 @@ namespace :brew do
         z mongo mysql redis postgresql \
         v8 chromedriver \
         nodejs wget'
-    sh 'bew install imagemagick --with-jp2'
+    sh 'brew install imagemagick --with-jp2'
   end
 
   desc 'Restart Homebrew services'
