@@ -11,7 +11,8 @@
 #  6.  Networking
 #  7.  System Operations & Information
 #  8.  Web Development
-#  9.  Reminders & Notes
+#  9.  Docker Development
+#  10. Reminders & Notes
 #
 #  ---------------------------------------------------------------------------
 
@@ -255,7 +256,26 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 
 
 #   ---------------------------------------
-#   9. REMINDERS & NOTES
+#   9. DOCKER DEVELOPMENT
+#   ---------------------------------------
+    # Docker Compose
+    alias dc="docker-compose"
+    alias dcup="docker-compose up --no-recreate"
+
+    # Docker
+    alias docps="docker ps -a"
+    alias dochost="echo $DOCKER_HOST"
+
+    # Docker Machine
+    alias dm="docker-machine"
+    alias dmls="docker-machine ls"
+
+    function dmenv {
+      eval $(docker-machine env $1)
+    }
+
+#   ---------------------------------------
+#   10. REMINDERS & NOTES
 #   ---------------------------------------
 
 #   remove_disk: spin down unneeded disk
