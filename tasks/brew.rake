@@ -14,7 +14,7 @@ namespace :brew do
     sh 'brew install rbenv ruby-build \
         z mongo mysql redis postgresql \
         v8 chromedriver \
-        nodejs wget \
+        nodejs wget memcached \
         go docker docker-compose'
     sh 'brew install imagemagick --with-jp2'
   end
@@ -26,5 +26,6 @@ namespace :brew do
     sh 'brew services restart redis'
     sh 'brew services restart postgresql'
     sh 'brew services restart docker-machine'
+    sh 'brew services restart memcached'
   end
 end
