@@ -303,3 +303,20 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   e.g.: hdiutil create -size 10m 10MB.dmg
 #   the above create files that are almost all zeros - if random bytes are desired
 #   then use: ~/Dev/Perl/randBytes 1048576 > 10MB.dat
+
+#   to count the number of files inside a directory
+#   ---------------------------------------
+#   ls -b1A | wc -l
+
+#   installing eventmachine gem
+#   ---------------------------------------
+#   gem install eventmachine -v '1.0.8' -- --with-cppflags=-I/usr/local/opt/openssl/include
+
+#   installing therubyracer gem
+#   ---------------------------------------
+#   gem uninstall libv8
+#   brew install v8
+#   gem install therubyracer
+
+
+
