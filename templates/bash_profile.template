@@ -317,3 +317,7 @@ EOT
 #   gem uninstall libv8
 #   brew install v8
 #   gem install therubyracer
+
+#   installing libv8 gem
+#   ---------------------------------------
+#   gem install libv8 -v '3.16.14.7' -- --with-system-v8
