@@ -16,7 +16,7 @@ namespace :brew do
         v8 chromedriver \
         nodejs wget memcached \
         go docker docker-compose'
-    sh 'brew install imagemagick --with-jp2 graphviz'
+    sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
   end
 
   desc 'Restart Homebrew services'
