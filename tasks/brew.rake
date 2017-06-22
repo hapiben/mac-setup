@@ -19,6 +19,7 @@ namespace :brew do
         nodejs wget memcached \
         go docker docker-compose docker-machine'
     sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
+    sh 'asciinema'
   end
 
   desc 'Restart Homebrew services'
