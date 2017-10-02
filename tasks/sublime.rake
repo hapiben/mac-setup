@@ -2,7 +2,7 @@ namespace :sublime do
 
   desc 'Install Sublime'
   task :install do
-    sh 'wget https://download.sublimetext.com/Sublime%20Text%20Build%203126.dmg -O sublimetext.dmg && \
+    sh 'wget https://download.sublimetext.com/Sublime%20Text%20Build%203143.dmg -O sublimetext.dmg && \
        hdiutil attach sublimetext.dmg'
     sh 'cp -R /Volumes/Sublime\ Text/Sublime\ Text.app /Applications/'
     sh 'hdiutil detach /dev/disk2s1 && \

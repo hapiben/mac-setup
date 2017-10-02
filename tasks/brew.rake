@@ -4,8 +4,6 @@ namespace :brew do
   task :install do
     if find_executable 'brew'
       sh 'brew update'
-      Rake::Task['brew:configure'].invoke
-      Rake::Task['brew:restart_services'].invoke
     else
       sh '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
     end
@@ -17,9 +15,9 @@ namespace :brew do
         z mongo mysql redis postgresql \
         v8 chromedriver \
         nodejs wget memcached \
-        go docker docker-compose docker-machine'
+        go docker docker-compose'
     sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
-    sh 'asciinema'
+    sh 'brew install htop yarn'
   end
 
   desc 'Restart Homebrew services'
