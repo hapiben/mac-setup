@@ -17,7 +17,7 @@ namespace :brew do
         nodejs wget memcached \
         go docker docker-compose'
     sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
-    sh 'brew install htop yarn'
+    sh 'brew install htop yarn bower'
   end
 
   desc 'Restart Homebrew services'
