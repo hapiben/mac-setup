@@ -321,3 +321,29 @@ EOT
 #   installing libv8 gem
 #   ---------------------------------------
 #   gem install libv8 -v '3.16.14.7' -- --with-system-v8
+
+# Setup NVM
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
+
+# Setup Android
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# List Java versions installed
+# /usr/libexec/java_home -V
+
+# Java 10
+# export JAVA_HOME=$(/usr/libexec/java_home -v 10)
+
+# Java 9
+# export JAVA_HOME=$(/usr/libexec/java_home -v 9)
+
+# # Java 1.8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# # Java 1.7
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+# # Java 1.6
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
