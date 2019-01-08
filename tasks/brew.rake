@@ -18,6 +18,7 @@ namespace :brew do
         go docker docker-compose'
     sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
     sh 'brew install htop yarn bower'
+    sh 'brew install mkcert'
   end
 
   desc 'Restart Homebrew services'
