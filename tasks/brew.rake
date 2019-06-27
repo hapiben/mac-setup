@@ -10,24 +10,7 @@ namespace :brew do
   end
 
   desc 'Install development dependencies'
-  task :configure do
-    sh 'brew install rbenv ruby-build \
-        z mongo mysql redis postgresql \
-        v8 chromedriver \
-        nodejs wget memcached \
-        go docker docker-compose'
-    sh 'brew install imagemagick --with-jp2 graphviz phantomjs'
-    sh 'brew install htop yarn bower'
-    sh 'brew install mkcert'
-  end
-
-  desc 'Restart Homebrew services'
-  task :restart_services do
-    sh 'brew services restart mongodb'
-    sh 'brew services restart mysql'
-    sh 'brew services restart redis'
-    sh 'brew services restart postgresql'
-    sh 'brew services restart docker-machine'
-    sh 'brew services restart memcached'
+  task :bundle do
+    sh 'brew bundle'
   end
 end

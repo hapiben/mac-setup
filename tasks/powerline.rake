@@ -1,15 +1,9 @@
-namespace :iterm do
+namespace :powerline do
 
-  desc 'Configure iterm'
+  desc 'Configure Powerline'
   task :configure do
-    copy_plist
     install_powerline_fonts
   end
-end
-
-def copy_plist
-  sh 'rm -fr ~/Library/Preferences/com.googlecode.iterm2.plist && \
-      cp templates/com.googlecode.iterm2.plist ~/Library/Preferences'
 end
 
 def install_powerline_fonts

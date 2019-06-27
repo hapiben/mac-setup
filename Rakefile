@@ -12,7 +12,6 @@ namespace :dotfiles do
     p '--------------------------------------------------------------------'
     Rake::Task['brew:install'].invoke
     Rake::Task['brew:configure'].invoke
-    Rake::Task['brew:restart_services'].invoke
 
     p 'Invoking Bash tasks'
     p '--------------------------------------------------------------------'
@@ -22,15 +21,5 @@ namespace :dotfiles do
     p '--------------------------------------------------------------------'
     Rake::Task['zsh:install'].invoke
     Rake::Task['zsh:configure'].invoke
-    Rake::Task['bash:configure'].invoke
-
-    p 'Invoking Iterm tasks'
-    p '--------------------------------------------------------------------'
-    Rake::Task['iterm:configure'].invoke
-
-    p 'Invoking Sublime tasks'
-    p '--------------------------------------------------------------------'
-    Rake::Task['sublime:install'].invoke
-    Rake::Task['sublime:configure'].invoke
   end
 end
