@@ -1,0 +1,42 @@
+tap "beeftornado/rmtree"
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "aws-elasticbeanstalk"
+brew "awscli"
+brew "docker"
+brew "docker-compose"
+brew "docker-machine", restart_service: true
+brew "fzf"
+brew "go"
+brew "graphviz"
+brew "htop"
+brew "httpie"
+brew "icu4c"
+brew "imagemagick", args: ["with-openjpeg"]
+brew "kompose"
+brew "kubernetes-cli"
+brew "kubernetes-helm"
+brew "libxml2"
+brew "memcached", restart_service: true
+brew "mkcert"
+brew "mongodb", restart_service: true
+brew "mysql@5.7", restart_service: true
+brew "node"
+brew "nvm"
+brew "postgresql", restart_service: true
+brew "ruby-build"
+brew "rbenv"
+brew "rbspy"
+brew "redis", restart_service: true
+brew "terraform"
+brew "v8"
+brew "vault"
+brew "wget"
+brew "yarn"
+brew "z"
+brew "heroku/brew/heroku"
+cask "chromedriver"
+cask "minikube"
